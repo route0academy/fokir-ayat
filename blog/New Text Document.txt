@@ -1,0 +1,52 @@
+<a href="#" class="logo">Fokir</a> <nav class="navbar"> <a href="#" class="active">home</a> <a href="#">about</a> <a href="#">services</a> <a href="#">portfolio</a> <a href="#">Testimonial</a> <a href="#">Blog</a> <a href="#">Contact</a> </nav> </div> <section class="section1"> <div class="title"> <h3>Hello i'm</h3> <h1>Ayat Salah</h1> <br><br> <div class="warpper"> <span class="fixed-text">Professional Web </span> <ul class="sec-texts"> <li> <span>Designer</span></li> <li> <span>developer</span></li> </ul> </div> </div> </section>
+
+
+
+
+.warpper {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.sec-texts {
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec-texts li span {
+    position: relative;
+    bottom: 0;
+    animation: slide 10s steps(2) infinite;
+}
+
+.sec-texts li span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 18px;
+    border-left: 2px solid white;
+    animation: typing 1.5s steps(9) infinite alternate;
+}
+
+section {
+    height: 100vh;
+}
+
+.section2 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+@keyframes slide {
+    100% {
+        bottom: -360px
+    }
+}
